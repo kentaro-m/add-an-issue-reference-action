@@ -1,0 +1,17 @@
+{
+  "name": "add-an-issue-reference-action",
+  "version": "1.0.0",
+  "description": "A GitHub Action for adding an issue reference to a pull request.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "Kentaro Matsushita",
+  "license": "ISC",
+  "dependencies": {
+    "actions-toolkit": "^1.1.1"
+  },
+  "devDependencies": {
+    "jest": "^24.0.0"
+  }
+}
