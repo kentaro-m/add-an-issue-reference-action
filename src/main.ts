@@ -26,7 +26,7 @@ async function run(): Promise<void> {
       owner: repo.owner,
       repo: repo.repo,
       // eslint-disable-next-line @typescript-eslint/camelcase
-      issue_number: issue.number
+      issue_number: issueNumber
     })
 
     const issueTitle = issueData.data.title
