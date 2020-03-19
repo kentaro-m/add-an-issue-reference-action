@@ -1,0 +1,16 @@
+name: 'Add an issue reference'
+description: 'A GitHub Action for adding a related issue reference to a pull request.'
+author: 'kentaro-m'
+inputs:
+  branch-prefix:
+    description: 'The prefix of branch name.'
+    required: true
+  repo-token:
+    description: 'Token for the repository. Can be passed in using {{ secrets.GITHUB_TOKEN }}'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: 'image'
+  color: 'gray-dark'
