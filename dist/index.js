@@ -2297,7 +2297,7 @@ function run() {
             // Get the issue number based on branch name
             const branchName = (_a = github.context.payload.pull_request) === null || _a === void 0 ? void 0 : _a.head.ref;
             const branchPrefix = core.getInput('branch-prefix', { required: true });
-            const pattern = new RegExp(`${branchPrefix}-([0-9]+)`);
+            const pattern = new RegExp(`${branchPrefix}([0-9]+)`);
             const issueNumber = utils_1.getIssueNumber(branchName, pattern);
             // Skip process to add an issue reference to a pull request
             if (issueNumber === 0) {

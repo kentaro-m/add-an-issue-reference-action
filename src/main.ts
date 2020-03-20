@@ -7,7 +7,7 @@ async function run(): Promise<void> {
     // Get the issue number based on branch name
     const branchName = github.context.payload.pull_request?.head.ref
     const branchPrefix = core.getInput('branch-prefix', {required: true})
-    const pattern = new RegExp(`${branchPrefix}-([0-9]+)`)
+    const pattern = new RegExp(`${branchPrefix}([0-9]+)`)
 
     const issueNumber = getIssueNumber(branchName, pattern)
 
