@@ -12,5 +12,5 @@ runs:
   using: 'node12'
   main: 'dist/index.js'
 branding:
-  icon: 'image'
+  icon: 'link'
   color: 'gray-dark'
